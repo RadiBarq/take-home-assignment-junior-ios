@@ -17,6 +17,7 @@
 		317447AC2492AEE500862E28 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447AB2492AEE500862E28 /* DemoData.swift */; };
 		317447AF2492B6DC00862E28 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447AE2492B6DC00862E28 /* Product.swift */; };
 		317447B12492B78A00862E28 /* ShoppingBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447B02492B78A00862E28 /* ShoppingBasket.swift */; };
+		E4CFEA116FEAB8F28512A478 /* Pods_EasyShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C229DB274D07BEF01351E8 /* Pods_EasyShopper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,9 @@
 		317447AB2492AEE500862E28 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		317447AE2492B6DC00862E28 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		317447B02492B78A00862E28 /* ShoppingBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingBasket.swift; sourceTree = "<group>"; };
+		43D9C3FBA7F17E8E3A9ADC87 /* Pods-EasyShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShopper.release.xcconfig"; path = "Target Support Files/Pods-EasyShopper/Pods-EasyShopper.release.xcconfig"; sourceTree = "<group>"; };
+		45C229DB274D07BEF01351E8 /* Pods_EasyShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51FB0FBB009E9E8B1E33629C /* Pods-EasyShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShopper.debug.xcconfig"; path = "Target Support Files/Pods-EasyShopper/Pods-EasyShopper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CFEA116FEAB8F28512A478 /* Pods_EasyShopper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				317447932492AE7000862E28 /* EasyShopper */,
 				317447922492AE7000862E28 /* Products */,
+				99221E33754701097B5D1D55 /* Pods */,
+				96D088A49F9BF248DC20A8E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +102,24 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		96D088A49F9BF248DC20A8E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45C229DB274D07BEF01351E8 /* Pods_EasyShopper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99221E33754701097B5D1D55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51FB0FBB009E9E8B1E33629C /* Pods-EasyShopper.debug.xcconfig */,
+				43D9C3FBA7F17E8E3A9ADC87 /* Pods-EasyShopper.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -102,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 317447A52492AE7200862E28 /* Build configuration list for PBXNativeTarget "EasyShopper" */;
 			buildPhases = (
+				C53AC011CFDE470E50B4D5A1 /* [CP] Check Pods Manifest.lock */,
 				3174478D2492AE7000862E28 /* Sources */,
 				3174478E2492AE7000862E28 /* Frameworks */,
 				3174478F2492AE7000862E28 /* Resources */,
+				BA1B6C34A44DF77AF57CB057 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +187,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA1B6C34A44DF77AF57CB057 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyShopper/Pods-EasyShopper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasyShopper/Pods-EasyShopper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyShopper/Pods-EasyShopper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C53AC011CFDE470E50B4D5A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyShopper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3174478D2492AE7000862E28 /* Sources */ = {
@@ -314,6 +383,7 @@
 		};
 		317447A62492AE7200862E28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51FB0FBB009E9E8B1E33629C /* Pods-EasyShopper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +402,7 @@
 		};
 		317447A72492AE7200862E28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D9C3FBA7F17E8E3A9ADC87 /* Pods-EasyShopper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
