@@ -68,5 +68,55 @@
         </objects>
         <point key="canvasLocation" x="1047.8260869565217" y="125.89285714285714"/>
     </scene>
+    
+    <!--Add Product View Controller-->
+    <scene sceneID="x5J-Md-SuL">
+        <objects>
+            <viewController storyboardIdentifier="AddProductViewController" id="G0l-6N-f6M" customClass="AddProductViewController" customModule="EasyShopper" customModuleProvider="target" sceneMemberID="viewController">
+                <view key="view" contentMode="scaleToFill" id="Afb-Qd-4dt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6n-Ht-Rja">
+                            <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="Dco-La-mkP" firstAttribute="trailing" secondItem="c6n-Ht-Rja" secondAttribute="trailing" id="E1f-X4-42t"/>
+                        <constraint firstItem="Dco-La-mkP" firstAttribute="bottom" secondItem="c6n-Ht-Rja" secondAttribute="bottom" id="QFu-gE-4rT"/>
+                        <constraint firstItem="c6n-Ht-Rja" firstAttribute="top" secondItem="Dco-La-mkP" secondAttribute="top" id="bdF-o3-EVl"/>
+                        <constraint firstItem="c6n-Ht-Rja" firstAttribute="leading" secondItem="Dco-La-mkP" secondAttribute="leading" id="x5q-33-ocE"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Dco-La-mkP"/>
+                </view>
+                <navigationItem key="navigationItem" id="E6W-H0-p5P"/>
+                <connections>
+                    <outlet property="tableView" destination="c6n-Ht-Rja" id="nhH-LW-Vo0"/>
+                </connections>
+            </viewController>
+            <placeholder placeholderIdentifier="IBFirstResponder" id="0Pg-ng-WbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+        </objects>
+        <point key="canvasLocation" x="2180" y="126"/>
+    </scene>
+    <!--Navigation Controller-->
+    <scene sceneID="GxL-9l-ydP">
+        <objects>
+            <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sdy-NI-5ZP" sceneMemberID="viewController">
+                <toolbarItems/>
+                <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Iqb-nH-Hzx">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </navigationBar>
+                <nil name="viewControllers"/>
+                <connections>
+                    <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LrU-w8-kzC"/>
+                </connections>
+            </navigationController>
+            <placeholder placeholderIdentifier="IBFirstResponder" id="gvx-Z4-Dox" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+        </objects>
+        <point key="canvasLocation" x="137.68115942028987" y="125.89285714285714"/>
+    </scene>
     </scenes>
 </document>
