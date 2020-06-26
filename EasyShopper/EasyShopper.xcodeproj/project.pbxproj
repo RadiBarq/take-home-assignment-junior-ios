@@ -30,7 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		317447912492AE7000862E28 /* EasyShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = EasyShopper.app; path = "/Users/harri/Documents/ka-ching-radi/take-home-assignment-junior-ios/EasyShopper/build/Debug-iphoneos/EasyShopper.app"; sourceTree = "<absolute>"; };
 		317447942492AE7000862E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317447962492AE7000862E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3174479B2492AE7000862E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		4BBBE42224A65D59006EA61C /* AddProductViewController+ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddProductViewController+ProductTableViewCell.swift"; sourceTree = "<group>"; };
 		4BBBE42424A65E8D006EA61C /* TableViewCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellRepresentable.swift; sourceTree = "<group>"; };
 		4BBBE42824A65EE8006EA61C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		4BBBE42A24A65F8C006EA61C /* EasyShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51FB0FBB009E9E8B1E33629C /* Pods-EasyShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShopper.debug.xcconfig"; path = "Target Support Files/Pods-EasyShopper/Pods-EasyShopper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,27 +74,21 @@
 				317447932492AE7000862E28 /* EasyShopper */,
 				99221E33754701097B5D1D55 /* Pods */,
 				96D088A49F9BF248DC20A8E7 /* Frameworks */,
+				4BBBE42A24A65F8C006EA61C /* EasyShopper.app */,
 			);
 			sourceTree = "<group>";
 		};
 		317447932492AE7000862E28 /* EasyShopper */ = {
 			isa = PBXGroup;
 			children = (
-				4BBBE42624A65EC5006EA61C /* Managers */,
 				317447A22492AE7200862E28 /* Info.plist */,
+				4BBBE3F624A658F1006EA61C /* Helpers */,
+				4BBBE42624A65EC5006EA61C /* Managers */,
 				4BBBE3FA24A65972006EA61C /* Basket */,
 				4BBBE3F724A6590F006EA61C /* StoryBoards */,
 				4BBBE3F524A658E7006EA61C /* General */,
-				317447AD2492B6C600862E28 /* Models */,
 			);
 			path = EasyShopper;
-			sourceTree = "<group>";
-		};
-		317447AD2492B6C600862E28 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		4BBBE3F524A658E7006EA61C /* General */ = {
@@ -118,7 +112,6 @@
 		4BBBE3F724A6590F006EA61C /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
-				4BBBE3F624A658F1006EA61C /* Helpers */,
 				3174479F2492AE7200862E28 /* LaunchScreen.storyboard */,
 				3174479A2492AE7000862E28 /* Main.storyboard */,
 			);
@@ -201,17 +194,17 @@
 			isa = PBXGroup;
 			children = (
 				4BBBE41024A65B7C006EA61C /* ProductTableViewCell.swift */,
-				4BBBE40F24A65B72006EA61C /* Representable */,
+				4BBBE40F24A65B72006EA61C /* Representables */,
 			);
 			path = ProductTableViewCell;
 			sourceTree = "<group>";
 		};
-		4BBBE40F24A65B72006EA61C /* Representable */ = {
+		4BBBE40F24A65B72006EA61C /* Representables */ = {
 			isa = PBXGroup;
 			children = (
 				4BBBE41224A65BA3006EA61C /* ProductTableViewCellRepresentable.swift */,
 			);
-			path = Representable;
+			path = Representables;
 			sourceTree = "<group>";
 		};
 		4BBBE41424A65C16006EA61C /* BasketViewModel */ = {
@@ -300,7 +293,7 @@
 			);
 			name = EasyShopper;
 			productName = EasyShopper;
-			productReference = 317447912492AE7000862E28 /* EasyShopper.app */;
+			productReference = 4BBBE42A24A65F8C006EA61C /* EasyShopper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -487,7 +480,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -541,7 +534,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -557,7 +550,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FUWNN36Z78;
+				DEVELOPMENT_TEAM = 5S7V735958;
 				INFOPLIST_FILE = EasyShopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -576,7 +569,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FUWNN36Z78;
+				DEVELOPMENT_TEAM = 5S7V735958;
 				INFOPLIST_FILE = EasyShopper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
