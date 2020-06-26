@@ -6,7 +6,7 @@
 //  Copyright © 2020 Ka-ching. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
 // MARK: - UITableView Delegate And DataSource

@@ -10,45 +10,90 @@
 import Foundation
 import UIKit
 
-/// ProductTableViewCellRepresentable
-class ProductTableViewCellRepresentable: TableViewCellRepresentable {
+/// Basket VIew Model
+class BasketViewModel {
     
-    /// Cell Height
-    var cellHeight: CGFloat
+    /// Representables
+    private var representables: [TableViewCellRepresentable]
     
-    /// Cell Representable
-    var cellReuseIdentifier: String
+    /// Total Price
+    private(set) var totalPrice: Int
     
-    /// Name
-    let name: String
-    
-    /// Image URL
-    let imageURL: String
-        
     /**
      Init
      */
     init() {
         
         // Set default values
-        self.cellHeight = 0.0
-        self.cellReuseIdentifier = ""
-        self.name = ""
-        self.imageURL = ""
+        self.representables = []
+        self.totalPrice = 0
+    }
+
+    
+    /**
+     Add representable
+     - Parameter product: `Product`
+     **/
+    func addRepresentable(product: Product) {
+        
+        // Add product to representables
+        self.representables.append(ProductTableViewCellRepresentable(name: product.name, imageURL: product.imageUrl))
+        
+        // Add retail price to total price
+        self.totalPrice += product.retailPrice
     }
     
-    init(name: String, imageURL: String) {
+    /**
+     Clear representables
+     **/
+    func clearRepresentables() {
         
-        // Setup cell height
-        self.cellHeight = ProductTableViewCell.getCellHeight()
+        // Clear all representables
+        self.representables.removeAll()
         
-        // Setup cell reuse identifier
-        self.cellReuseIdentifier = ProductTableViewCell.getReuseIdentifier()
+        // Set total price to zero
+        self.totalPrice = 0
+    }
+    
+    // MARK:- Table View DataSource
+    
+    /**
+     Get number of rows in sections.
+     - Parameter section: Section number as Int.
+     - Returns: Number of rows in section as Int.
+     */
+    func numberOfRows(inSection section: Int) -> Int {
         
-        // Set name
-        self.name = name
+        return self.representables.count
+    }
+    
+    /**
+     Get number of sections
+     - Returns: Number of Sections as Int.
+     */
+    func numberOfSections() -> Int {
         
-        // Set image url
-        self.imageURL = imageURL
+        return 1
+    }
+    
+    /**
+     Get height of row at indexPath.
+     - Parameter indexPath: Index path.
+     - Parameter tableView: Table View.
+     - Returns: height of row at indexPath as CGFloat.
+     */
+    func heightForRow(at indexPath: IndexPath, tableView: UITableView) -> CGFloat {
+        
+        return self.representables[indexPath.row].cellHeight
+    }
+    
+    /**
+     Get cell representable at indexPath.
+     - Parameter indexPath: Index path.
+     - Returns: Cell representable as tableView cell representable.
+     */
+    func representableForRow(at indexPath: IndexPath) -> TableViewCellRepresentable? {
+        
+        return self.representables[indexPath.row]
     }
 }
