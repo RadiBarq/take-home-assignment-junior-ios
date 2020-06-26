@@ -82,11 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				317447A22492AE7200862E28 /* Info.plist */,
+				4BBBE3F524A658E7006EA61C /* General */,
 				4BBBE3F624A658F1006EA61C /* Helpers */,
 				4BBBE42624A65EC5006EA61C /* Managers */,
 				4BBBE3FA24A65972006EA61C /* Basket */,
 				4BBBE3F724A6590F006EA61C /* StoryBoards */,
-				4BBBE3F524A658E7006EA61C /* General */,
 			);
 			path = EasyShopper;
 			sourceTree = "<group>";
@@ -129,8 +129,8 @@
 		4BBBE3FA24A65972006EA61C /* Basket */ = {
 			isa = PBXGroup;
 			children = (
-				4BBBE3FE24A659A4006EA61C /* ViewController */,
-				4BBBE3FD24A6599E006EA61C /* ViewModel */,
+				4BBBE3FE24A659A4006EA61C /* ViewControllers */,
+				4BBBE3FD24A6599E006EA61C /* ViewModels */,
 				4BBBE3FC24A65997006EA61C /* Cells */,
 				4BBBE3FB24A65991006EA61C /* Models */,
 			);
@@ -153,22 +153,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		4BBBE3FD24A6599E006EA61C /* ViewModel */ = {
+		4BBBE3FD24A6599E006EA61C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				4BBBE41524A65C22006EA61C /* AddProductViewModel */,
 				4BBBE41424A65C16006EA61C /* BasketViewModel */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		4BBBE3FE24A659A4006EA61C /* ViewController */ = {
+		4BBBE3FE24A659A4006EA61C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				4BBBE41C24A65D19006EA61C /* AddProductViewController */,
 				4BBBE3FF24A65A15006EA61C /* BasketViewController */,
 			);
-			path = ViewController;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		4BBBE3FF24A65A15006EA61C /* BasketViewController */ = {
