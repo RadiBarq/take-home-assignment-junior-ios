@@ -8,7 +8,18 @@
 
 import Foundation
 
+/// Product
 struct Product: Decodable {
+    
+    /// Id
     var id: String
-    #warning("Complete this data structure")
+    
+    /// Title
+    var name: String
+    
+    /// Image URL
+    var imageUrl: String
+    
+    // Retail Price
+    var retailPrice: Int
 }

@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		317447912492AE7000862E28 /* EasyShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		317447912492AE7000862E28 /* EasyShopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = EasyShopper.app; path = "/Users/harri/Documents/ka-ching-radi/take-home-assignment-junior-ios/EasyShopper/build/Debug-iphoneos/EasyShopper.app"; sourceTree = "<absolute>"; };
 		317447942492AE7000862E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		317447962492AE7000862E28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3174479B2492AE7000862E28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,18 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				317447932492AE7000862E28 /* EasyShopper */,
-				317447922492AE7000862E28 /* Products */,
 				99221E33754701097B5D1D55 /* Pods */,
 				96D088A49F9BF248DC20A8E7 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		317447922492AE7000862E28 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				317447912492AE7000862E28 /* EasyShopper.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		317447932492AE7000862E28 /* EasyShopper */ = {
@@ -93,7 +84,6 @@
 		317447AD2492B6C600862E28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				317447AE2492B6DC00862E28 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +137,7 @@
 		4BBBE3FB24A65991006EA61C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				317447AE2492B6DC00862E28 /* Product.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,7 +291,7 @@
 				Base,
 			);
 			mainGroup = 317447882492AE7000862E28;
-			productRefGroup = 317447922492AE7000862E28 /* Products */;
+			productRefGroup = 317447882492AE7000862E28;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
