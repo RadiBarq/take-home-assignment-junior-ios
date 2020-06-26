@@ -25,6 +25,7 @@
 		4BBBE42124A65D4E006EA61C /* AddProductViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE42024A65D4E006EA61C /* AddProductViewController+TableViewDataSource.swift */; };
 		4BBBE42324A65D59006EA61C /* AddProductViewController+ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE42224A65D59006EA61C /* AddProductViewController+ProductTableViewCell.swift */; };
 		4BBBE42524A65E8D006EA61C /* TableViewCellRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE42424A65E8D006EA61C /* TableViewCellRepresentable.swift */; };
+		4BBBE42924A65EE8006EA61C /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE42824A65EE8006EA61C /* NetworkingManager.swift */; };
 		E4CFEA116FEAB8F28512A478 /* Pods_EasyShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C229DB274D07BEF01351E8 /* Pods_EasyShopper.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		4BBBE42024A65D4E006EA61C /* AddProductViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddProductViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
 		4BBBE42224A65D59006EA61C /* AddProductViewController+ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddProductViewController+ProductTableViewCell.swift"; sourceTree = "<group>"; };
 		4BBBE42424A65E8D006EA61C /* TableViewCellRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellRepresentable.swift; sourceTree = "<group>"; };
+		4BBBE42824A65EE8006EA61C /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		51FB0FBB009E9E8B1E33629C /* Pods-EasyShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShopper.debug.xcconfig"; path = "Target Support Files/Pods-EasyShopper/Pods-EasyShopper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 		317447932492AE7000862E28 /* EasyShopper */ = {
 			isa = PBXGroup;
 			children = (
+				4BBBE42624A65EC5006EA61C /* Managers */,
 				317447A22492AE7200862E28 /* Info.plist */,
 				4BBBE3FA24A65972006EA61C /* Basket */,
 				4BBBE3F724A6590F006EA61C /* StoryBoards */,
@@ -245,6 +248,22 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		4BBBE42624A65EC5006EA61C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4BBBE42724A65ED4006EA61C /* NetworkingManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4BBBE42724A65ED4006EA61C /* NetworkingManager */ = {
+			isa = PBXGroup;
+			children = (
+				4BBBE42824A65EE8006EA61C /* NetworkingManager.swift */,
+			);
+			path = NetworkingManager;
+			sourceTree = "<group>";
+		};
 		96D088A49F9BF248DC20A8E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +401,7 @@
 				4BBBE41E24A65D2D006EA61C /* AddProductViewController.swift in Sources */,
 				4BBBE41324A65BA3006EA61C /* ProductTableViewCellRepresentable.swift in Sources */,
 				4BBBE42124A65D4E006EA61C /* AddProductViewController+TableViewDataSource.swift in Sources */,
+				4BBBE42924A65EE8006EA61C /* NetworkingManager.swift in Sources */,
 				4BBBE41124A65B7C006EA61C /* ProductTableViewCell.swift in Sources */,
 				4BBBE41724A65C3C006EA61C /* BasketViewModel.swift in Sources */,
 				4BBBE40524A65A6C006EA61C /* BasketViewController+TableViewDataSource.swift in Sources */,
