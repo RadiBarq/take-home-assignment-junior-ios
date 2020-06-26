@@ -13,6 +13,10 @@
 		3174479E2492AE7200862E28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3174479D2492AE7200862E28 /* Assets.xcassets */; };
 		317447A12492AE7200862E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3174479F2492AE7200862E28 /* LaunchScreen.storyboard */; };
 		317447AF2492B6DC00862E28 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317447AE2492B6DC00862E28 /* Product.swift */; };
+		4BBBE40324A65A3D006EA61C /* BasketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE40224A65A3D006EA61C /* BasketViewController.swift */; };
+		4BBBE40524A65A6C006EA61C /* BasketViewController+TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE40424A65A6C006EA61C /* BasketViewController+TableViewDataSource.swift */; };
+		4BBBE40724A65A7A006EA61C /* BasketViewController+AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE40624A65A7A006EA61C /* BasketViewController+AddProductViewController.swift */; };
+		4BBBE40924A65A84006EA61C /* BasketViewController+ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBE40824A65A84006EA61C /* BasketViewController+ProductTableViewCell.swift */; };
 		E4CFEA116FEAB8F28512A478 /* Pods_EasyShopper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45C229DB274D07BEF01351E8 /* Pods_EasyShopper.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		317447AE2492B6DC00862E28 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		43D9C3FBA7F17E8E3A9ADC87 /* Pods-EasyShopper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShopper.release.xcconfig"; path = "Target Support Files/Pods-EasyShopper/Pods-EasyShopper.release.xcconfig"; sourceTree = "<group>"; };
 		45C229DB274D07BEF01351E8 /* Pods_EasyShopper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyShopper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBBE40224A65A3D006EA61C /* BasketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketViewController.swift; sourceTree = "<group>"; };
+		4BBBE40424A65A6C006EA61C /* BasketViewController+TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasketViewController+TableViewDataSource.swift"; sourceTree = "<group>"; };
+		4BBBE40624A65A7A006EA61C /* BasketViewController+AddProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasketViewController+AddProductViewController.swift"; sourceTree = "<group>"; };
+		4BBBE40824A65A84006EA61C /* BasketViewController+ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BasketViewController+ProductTableViewCell.swift"; sourceTree = "<group>"; };
 		51FB0FBB009E9E8B1E33629C /* Pods-EasyShopper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShopper.debug.xcconfig"; path = "Target Support Files/Pods-EasyShopper/Pods-EasyShopper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,8 +158,28 @@
 		4BBBE3FE24A659A4006EA61C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				4BBBE3FF24A65A15006EA61C /* BasketViewController */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4BBBE3FF24A65A15006EA61C /* BasketViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4BBBE40024A65A25006EA61C /* Extensions */,
+				4BBBE40224A65A3D006EA61C /* BasketViewController.swift */,
+			);
+			path = BasketViewController;
+			sourceTree = "<group>";
+		};
+		4BBBE40024A65A25006EA61C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4BBBE40424A65A6C006EA61C /* BasketViewController+TableViewDataSource.swift */,
+				4BBBE40624A65A7A006EA61C /* BasketViewController+AddProductViewController.swift */,
+				4BBBE40824A65A84006EA61C /* BasketViewController+ProductTableViewCell.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		96D088A49F9BF248DC20A8E7 /* Frameworks */ = {
@@ -288,7 +316,11 @@
 			files = (
 				317447952492AE7000862E28 /* AppDelegate.swift in Sources */,
 				317447972492AE7000862E28 /* SceneDelegate.swift in Sources */,
+				4BBBE40524A65A6C006EA61C /* BasketViewController+TableViewDataSource.swift in Sources */,
+				4BBBE40724A65A7A006EA61C /* BasketViewController+AddProductViewController.swift in Sources */,
+				4BBBE40324A65A3D006EA61C /* BasketViewController.swift in Sources */,
 				317447AF2492B6DC00862E28 /* Product.swift in Sources */,
+				4BBBE40924A65A84006EA61C /* BasketViewController+ProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
